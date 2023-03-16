@@ -5,9 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard-with-typescript",
-        "plugin:react-hooks/recommended",
-        "plugin:prettier/recommended"
+        "standard-with-typescript"
     ],
     "overrides": [
     ],
@@ -16,39 +14,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "eslint-plugin-import-helpers",
-        "react-hooks",
-        "prettier"
+        "react"
     ],
     "rules": {
-        "import-helpers/order-imports": [
-            "warn",
-            {
-                "newlinesBetween": "always",
-                "groups": [
-                    "module",
-                    "/^@shared/",
-                    [
-                        "parent",
-                        "sibling",
-                        "index"
-                    ]
-                ],
-                "alphabetize": {
-                    "order": "asc",
-                    "ignoreCase": true
-                }
-            }
-        ],
-        "react-hooks/exhaustive-deps": [
-            "warn",
-            {
-                "additionalHooks": "(useMyCustomHook|useMyOtherCustomHook)"
-            }
-        ],
-        "react-hooks/rules-of-hooks": "error",
-        "prettier/prettier": "error"
-        
     }
 }

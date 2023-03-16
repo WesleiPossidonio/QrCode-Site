@@ -41,6 +41,7 @@ flex-wrap: wrap;
 > svg {
     width: min(20.3125rem, 70vw);
     height: 20.3125rem;
+    box-shadow: 16px 18px 9px -3px rgba(0,0,0,0.1);
 }
 `
 

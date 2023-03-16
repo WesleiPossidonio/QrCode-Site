@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
-    "eslint": "^8.35.0",
+    "eslint": "^8.36.0",
     "qrcode": "^1.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
