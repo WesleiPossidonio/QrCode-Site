@@ -10,7 +10,7 @@ declare module 'styled-components' {
          "text-color": string, 
          "title-color": string,
          "subTitle-color": string,
-     },
+      },
  
      textSizes: {
           "text": string,
