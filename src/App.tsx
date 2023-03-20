@@ -1,11 +1,10 @@
+import { DefaultTheme, ThemeProvider } from 'styled-components'
 
-import { DefaultTheme, ThemeProvider } from "styled-components";
-import { Home } from "./Pages/Home";
-import { GlobalStyles } from "./styles/globalStyle";
-import { Dark } from './styles/theme/dark';
-import { light } from "./styles/theme/light";
-import usePersistedState from './utils/usePersistedState';
-
+import { Home } from './Pages/Home'
+import { GlobalStyles } from './styles/globalStyle'
+import { Dark } from './styles/theme/dark'
+import { light } from './styles/theme/light'
+import usePersistedState from './utils/usePersistedState'
 
 export function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', Dark)
@@ -16,10 +15,8 @@ export function App() {
 
   return (
     <ThemeProvider theme={theme}>
-       <Home toggleTheme={toggleTheme} />
-       <GlobalStyles />
+      <Home toggleTheme={toggleTheme} />
+      <GlobalStyles />
     </ThemeProvider>
   )
 }
-
-
